@@ -10,8 +10,5 @@ build:
 publish:
 	poetry publish --dry-run
 
-gendiff:
-	poetry run gendiff
-
 lint:
 	poetry run flake8 gendiff
