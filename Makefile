@@ -13,7 +13,10 @@ publish:
 lint:
 	poetry run flake8 gendiff
 
+test:
+	poetry run pytest tests/json_flat.py
+
 check:
 	poetry run flake8 gendiff
 	poetry run flake8 tests
-	poetry run pytest
+	poetry run pytest tests/json_flat.py
