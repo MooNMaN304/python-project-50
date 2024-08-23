@@ -16,6 +16,10 @@ lint:
 test:
 	poetry run pytest tests/json_flat.py
 
+test-coverage:
+	poetry run pytest tests/json_flat.py --cov=gendiff --cov-report xml
+	poetry run pytest tests/json_flat.py --cov
+
 check:
 	poetry run flake8 gendiff
 	poetry run flake8 tests
