@@ -14,13 +14,13 @@ lint:
 	poetry run flake8 gendiff
 
 test:
-	poetry run pytest tests/json_flat.py
+	poetry run pytest
 
 test-coverage:
-	poetry run pytest tests/json_flat.py --cov=gendiff --cov-report xml
-	poetry run pytest tests/json_flat.py --cov
+	poetry run pytest --cov=gendiff --cov-report xml
+	poetry run pytest --cov
 
 check:
 	poetry run flake8 gendiff
 	poetry run flake8 tests
-	poetry run pytest tests/json_flat.py
+	poetry run pytest
